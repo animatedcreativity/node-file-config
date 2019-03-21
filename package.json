@@ -1,13 +1,13 @@
 {
   "name": "node-file-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Automatically read config from files for a project. If changes are made to the config files, a new copy of config is fetched next time.",
   "main": "main.js",
   "scripts": {
     "start": "node main.js"
   },
   "dependencies": {
-    
+    "node-sanitize-options": "^0.0.6"
   },
   "engines": {
     "node": "8.x"
