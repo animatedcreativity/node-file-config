@@ -24,5 +24,6 @@ exports = module.exports = function(project) {
       config = sanitize.options(config, {});
       return config;
     }
-  }
+  };
+  return app;
 };
