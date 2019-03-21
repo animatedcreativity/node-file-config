@@ -7,7 +7,7 @@ exports = module.exports = function(project) {
       if (fs.existsSync(file) === true) {
         var filename = path.resolve(file);
         delete require.cache[filename];
-        return require(file)();
+        return require(filename)();
       } else {
         return {};
       }
