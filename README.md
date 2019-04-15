@@ -15,6 +15,9 @@ console.log(config.get(userConfig, files));
 
 The module checks for these config files automatically even if no additional files are provided:
 
+- ../../<project_folder_name>.js
+- ../<project_folder_name>.js
+- ./<project_folder_name>.js
 - ../../<project_name>.js
 - ../<project_name>.js
 - ./<project_name>.js

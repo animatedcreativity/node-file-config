@@ -13,10 +13,14 @@ exports = module.exports = function(project) {
       }
     },
     get: function(config, files) {
+      var folder = path.basename(process.cwd());
       if (typeof files === "undefined") files = [];
       for (var i=0; i<=files.length-1; i++) {
         config = sanitize.options(config, app.require(files[i]));
       }
+      config = sanitize.options(config, app.require("../../" + folder + ".js"));
+      config = sanitize.options(config, app.require("../" + folder + ".js"));
+      config = sanitize.options(config, app.require("./" + folder + ".js"));
       config = sanitize.options(config, app.require("../../" + project + ".js"));
       config = sanitize.options(config, app.require("../" + project + ".js"));
       config = sanitize.options(config, app.require("./" + project + ".js"));
