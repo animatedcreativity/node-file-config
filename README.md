@@ -22,6 +22,8 @@ The module checks for these config files automatically even if no additional fil
 - ../<project_name>.js
 - ./<project_name>.js
 - ./config.js
+- path.dirname(require.main.filename) + /<project_name>.js
+- path.dirname(require.main.filename) + /config.js
 - __dirname + <project_name>.js
 - __dirname + config.js
 

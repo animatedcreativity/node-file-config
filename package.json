@@ -1,6 +1,6 @@
 {
   "name": "node-file-config",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Automatically read config from files for a project. If changes are made to the config files, a new copy of config is fetched next time.",
   "main": "main.js",
   "scripts": {
