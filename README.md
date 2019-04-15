@@ -22,8 +22,8 @@ The module checks for these config files automatically even if no additional fil
 - ../<project_name>.js
 - ./<project_name>.js
 - ./config.js
-- <project_name>.js
-- config.js
+- __dirname + <project_name>.js
+- __dirname + config.js
 
 The priority of config is decided in the same order. But, if you specify extra config `files` as mentioned above, they will have top priority in the order of array provided.
 
