@@ -25,6 +25,8 @@ exports = module.exports = function(project) {
       config = sanitize.options(config, app.require("../" + project + ".js"));
       config = sanitize.options(config, app.require("./" + project + ".js"));
       config = sanitize.options(config, app.require("./config.js"));
+      config = sanitize.options(config, app.require(project + ".js"));
+      config = sanitize.options(config, app.require("config.js"));
       config = sanitize.options(config, {});
       return config;
     }
