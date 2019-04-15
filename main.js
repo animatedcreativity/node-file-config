@@ -18,6 +18,7 @@ exports = module.exports = function(project) {
       for (var i=0; i<=files.length-1; i++) {
         config = sanitize.options(config, app.require(files[i]));
       }
+      console.log(__dirname + "/config.js", path.dirname(require.main.filename));
       config = sanitize.options(config, app.require("../../" + folder + ".js"));
       config = sanitize.options(config, app.require("../" + folder + ".js"));
       config = sanitize.options(config, app.require("./" + folder + ".js"));
